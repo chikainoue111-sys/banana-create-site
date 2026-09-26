@@ -3,27 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#11120e" />
     <title>Games | BANANA CREATE</title>
     <meta name="description" content="BANANA CREATEが制作する3タイトルの一覧ページ。" />
     <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">本文へスキップ</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="brand" href="../index.html">
-          <img src="../assets/logo-banana-create.png" alt="BANANA CREATE" />
+        <a class="brand" href="../index.html" aria-label="BANANA CREATE ホーム">
+          <img src="../assets/logo-banana-create.png" alt="" />
+          <span>BANANA CREATE<span class="brand-dot">.</span></span>
         </a>
-        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="global-nav">
-          メニュー
-        </button>
+
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+            <span aria-hidden="true">◐</span>
+            <span data-theme-label>ライトに切り替え</span>
+          </button>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="global-nav">
+            メニュー
+          </button>
+        </div>
+
         <nav class="site-nav" id="global-nav" data-site-nav aria-label="グローバルナビゲーション">
           <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="./index.html" aria-current="page">Games</a></li>
-            <li><a href="../index.html#about">Studio</a></li>
-            <li><a href="../index.html#news">News</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../studio.html">Studio</a></li>
+            <li><a href="../news/index.html">News</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
             <li><a href="../privacy.html">Privacy</a></li>
           </ul>
         </nav>
@@ -31,50 +44,64 @@
     </header>
 
     <main id="main" class="main-wrap">
-      <div class="page-title">
-        <h1>Games</h1>
-        <p class="muted">現在開発中の3タイトル</p>
-      </div>
+      <section class="content-section games-hero" aria-labelledby="games-page-title">
+        <p class="eyebrow">WORK IN PROGRESS ✳ BANANA CREATE</p>
+        <h1 id="games-page-title">Selected <em>Games.</em></h1>
+        <p class="muted games-hero-lead">
+          現在開発中の3タイトル。シンプルな題材を、記憶に残る手触りへ。
+        </p>
+      </section>
 
-      <section class="games-grid" aria-label="ゲーム一覧">
-        <article class="game-card">
-          <figure class="media-frame" data-fallback="これはバナナですか？">
+      <section class="games-showcase" aria-label="ゲーム一覧">
+        <article class="game-feature-card panel" data-reveal>
+          <figure class="media-frame games-feature-media" data-fallback="これはバナナですか？">
             <img src="../assets/game-koreha-banana.jpg" alt="これはバナナですか？のゲームビジュアル" loading="lazy" />
             <figcaption class="media-fallback" hidden>これはバナナですか？</figcaption>
+            <span class="feature-badge">01</span>
           </figure>
-          <div class="game-card-body">
+          <div class="games-feature-copy">
+            <p class="games-kicker">ACTION / COLLECTION</p>
             <h2>これはバナナですか？</h2>
-            <span class="status">開発中</span>
             <p>ゴリラが木を蹴り、落ちてくる黄色いアイテムを収集するコレクションゲーム。</p>
-            <a href="./koreha-banana.html">詳細を見る</a>
+            <span class="status">開発中</span>
           </div>
         </article>
 
-        <article class="game-card">
-          <figure class="media-frame" data-fallback="さいのかわら">
-            <img src="../assets/game-sainokawara.jpg" alt="さいのかわらのゲームビジュアル" loading="lazy" />
-            <figcaption class="media-fallback" hidden>さいのかわら</figcaption>
-          </figure>
-          <div class="game-card-body">
-            <h2>さいのかわら</h2>
-            <span class="status">開発中</span>
-            <p>デジタルデトックスをテーマに、心拍を整えるような操作感を目指すアプリ。</p>
-            <a href="./sainokawara.html">詳細を見る</a>
-          </div>
-        </article>
+        <div class="games-grid games-page-grid">
+          <article class="game-card" data-reveal>
+            <figure class="media-frame card-media" data-fallback="さいのかわら">
+              <img src="../assets/game-sainokawara.jpg" alt="さいのかわらのゲームビジュアル" loading="lazy" />
+              <figcaption class="media-fallback" hidden>さいのかわら</figcaption>
+            </figure>
+            <div class="game-card-body">
+              <div class="card-meta"><span>02 / EXPERIENCE</span><span class="status">開発中</span></div>
+              <h3>さいのかわら</h3>
+              <p>デジタルデトックスをテーマに、心拍を整えるような操作感を目指すアプリ。</p>
+            </div>
+          </article>
 
-        <article class="game-card">
-          <figure class="media-frame" data-fallback="ごはんの時間よ！">
-            <img src="../assets/game-gohan-no-jikan.jpg" alt="ごはんの時間よ！のゲームビジュアル" loading="lazy" />
-            <figcaption class="media-fallback" hidden>ごはんの時間よ！</figcaption>
-          </figure>
-          <div class="game-card-body">
-            <h2>ごはんの時間よ！</h2>
-            <span class="status">開発中</span>
-            <p>食堂のおばちゃんになり、注文を間違えずに届ける反射×記憶ゲーム。</p>
-            <a href="./gohan-no-jikan.html">詳細を見る</a>
-          </div>
-        </article>
+          <article class="game-card" data-reveal>
+            <figure class="media-frame card-media" data-fallback="ごはんの時間よ！">
+              <img src="../assets/game-gohan-no-jikan.jpg" alt="ごはんの時間よ！のゲームビジュアル" loading="lazy" />
+              <figcaption class="media-fallback" hidden>ごはんの時間よ！</figcaption>
+            </figure>
+            <div class="game-card-body">
+              <div class="card-meta"><span>03 / KITCHEN</span><span class="status">開発中</span></div>
+              <h3>ごはんの時間よ！</h3>
+              <p>食堂のおばちゃんになり、注文を間違えずに届ける反射×記憶ゲーム。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="games-note panel" data-reveal>
+        <p class="eyebrow">DEVELOPMENT NOTE</p>
+        <h2>More titles are <em>coming.</em></h2>
+        <p>
+          開発メモや進捗はNewsページで更新しています。  
+          新作の情報は準備ができ次第、順次公開します。
+        </p>
+        <a class="text-link" href="../news/index.html">Newsを見る <span aria-hidden="true">↗</span></a>
       </section>
     </main>
 
@@ -83,11 +110,12 @@
         <small>© BANANA CREATE</small>
         <ul class="footer-links">
           <li><a href="../privacy.html">Privacy Policy</a></li>
-          <li><a href="./index.html">Games</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="./index.html" aria-current="page">Games</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
     </footer>
-    <script src="../script.js"></script>
+
+    <button class="back-to-top" type="button" data-back-to-top aria-label="ページ上部へ戻る">↑</button>
   </body>
-  </html>
+</html>

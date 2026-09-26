@@ -3,66 +3,452 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#11120e" />
     <title>Privacy Policy | BANANA CREATE</title>
+    <meta
+      name="description"
+      content="BANANA CREATEにおける個人情報および利用者情報の取り扱いについてご案内します。"
+    />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
+
   <body>
     <a class="skip-link" href="#main">本文へスキップ</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="brand" href="./index.html">
-          <img src="./assets/logo-banana-create.png" alt="BANANA CREATE" />
+        <a class="brand" href="./index.html" aria-label="BANANA CREATE ホーム">
+          <img src="./assets/logo-banana-create.png" alt="" />
+          <span>BANANA CREATE<span class="brand-dot">.</span></span>
         </a>
-        <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="global-nav">
-          メニュー
-        </button>
-        <nav class="site-nav" id="global-nav" data-site-nav aria-label="グローバルナビゲーション">
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-pressed="false"
+          >
+            <span aria-hidden="true">◐</span>
+            <span data-theme-label>ライトに切り替え</span>
+          </button>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="global-nav"
+          >
+            メニュー
+          </button>
+        </div>
+
+        <nav
+          class="site-nav"
+          id="global-nav"
+          data-site-nav
+          aria-label="グローバルナビゲーション"
+        >
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./games/index.html">Games</a></li>
-            <li><a href="./index.html#about">Studio</a></li>
-            <li><a href="./index.html#news">News</a></li>
-            <li><a href="./index.html#contact">Contact</a></li>
-            <li><a href="./privacy.html" aria-current="page">Privacy</a></li>
+            <li><a href="./studio.html#about">Studio</a></li>
+            <li><a href="./news/index.html">News</a></li>
+            <li><a href="./contact/index.html#contact">Contact</a></li>
+            <li>
+              <a href="./privacy.html" aria-current="page">Privacy</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main" class="main-wrap">
-      <div class="page-title">
-        <h1>プライバシーポリシー</h1>
+      <header class="content-section legal-hero" data-reveal>
+        <p class="eyebrow">LEGAL / PRIVACY</p>
+        <h1>Privacy<br /><em>Policy.</em></h1>
+        <p class="legal-lead">
+          BANANA CREATEにおける個人情報および利用者情報の取り扱いについて
+        </p>
+
+        <div class="legal-date">
+          <span>制定日</span>
+          <time datetime="2026-09-26">2026年9月26日</time>
+        </div>
+      </header>
+
+      <div class="legal-layout">
+        <aside class="legal-sidebar" aria-label="ページ内メニュー" data-reveal>
+          <div class="legal-sidebar-inner">
+            <p class="legal-sidebar-title">CONTENTS</p>
+
+            <ol class="legal-toc">
+              <li><a href="#operator">運営者情報</a></li>
+              <li><a href="#information">取得する情報</a></li>
+              <li><a href="#purpose">利用目的</a></li>
+              <li><a href="#cookies">Cookie等の利用</a></li>
+              <li><a href="#third-party">第三者提供</a></li>
+              <li><a href="#outsourcing">取り扱いの委託</a></li>
+              <li><a href="#security">安全管理措置</a></li>
+              <li><a href="#retention">保存期間</a></li>
+              <li><a href="#requests">開示等の請求</a></li>
+              <li><a href="#external">外部サービス</a></li>
+              <li><a href="#children">未成年者について</a></li>
+              <li><a href="#changes">ポリシーの変更</a></li>
+              <li><a href="#contact-privacy">お問い合わせ</a></li>
+            </ol>
+          </div>
+        </aside>
+
+        <article class="legal-content">
+          <section class="panel legal-introduction" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">00</span>
+            <p>
+              BANANA CREATE（以下「当スタジオ」といいます。）は、当スタジオが運営する
+              ウェブサイトおよび関連サービス（以下「本サービス」といいます。）における、
+              利用者の個人情報その他の利用者情報の取り扱いについて、以下のとおり
+              プライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
+            </p>
+          </section>
+
+          <section id="operator" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">01</span>
+            <h2>運営者情報</h2>
+
+            <dl class="legal-definition-list">
+              <div>
+                <dt>名称</dt>
+                <dd>BANANA CREATE</dd>
+              </div>
+              <div>
+                <dt>運営者</dt>
+                <dd>【公開前に法人名または個人事業主名を入力】</dd>
+              </div>
+              <div>
+                <dt>所在地</dt>
+                <dd>【公開前に住所を入力】</dd>
+              </div>
+              <div>
+                <dt>代表者</dt>
+                <dd>【公開前に代表者名を入力】</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section id="information" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">02</span>
+            <h2>取得する情報</h2>
+
+            <p>
+              当スタジオは、本サービスの提供にあたり、以下の情報を取得する場合があります。
+            </p>
+
+            <h3>お問い合わせに関する情報</h3>
+            <ul>
+              <li>氏名、ハンドルネームまたは団体名</li>
+              <li>メールアドレスその他の連絡先</li>
+              <li>勤務先、所属部署、役職などの所属情報</li>
+              <li>お問い合わせ、取材、制作協業などの相談内容</li>
+              <li>当スタジオとの連絡および対応履歴</li>
+            </ul>
+
+            <h3>採用活動に関する情報</h3>
+            <ul>
+              <li>氏名、連絡先、生年月日などの応募者情報</li>
+              <li>履歴書、職務経歴書、ポートフォリオなどの応募書類</li>
+              <li>希望職種、経歴、技能、選考結果および選考過程の記録</li>
+            </ul>
+
+            <h3>本サイトの利用時に取得される情報</h3>
+            <ul>
+              <li>IPアドレス</li>
+              <li>ブラウザ、OS、端末などに関する情報</li>
+              <li>閲覧したページ、アクセス日時、参照元などのアクセス情報</li>
+              <li>エラー情報および不正アクセスの検知に必要な技術情報</li>
+            </ul>
+
+            <p class="legal-note">
+              これらの技術情報は、本サイトが利用するサーバー、ホスティング事業者
+              またはコンテンツ配信事業者によって自動的に記録される場合があります。
+            </p>
+          </section>
+
+          <section id="purpose" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">03</span>
+            <h2>利用目的</h2>
+
+            <p>当スタジオは、取得した情報を以下の目的で利用します。</p>
+
+            <ol>
+              <li>本サービスの提供、運営、維持および改善のため</li>
+              <li>お問い合わせ、ご相談、取材依頼などへの回答および連絡のため</li>
+              <li>制作協業、業務委託その他の取引に関する検討および連絡のため</li>
+              <li>採用応募の受付、選考、本人確認および応募者への連絡のため</li>
+              <li>作品、サービス、イベントなどに関する案内を行うため</li>
+              <li>本サイトの利用状況を把握し、品質および利便性を改善するため</li>
+              <li>不正アクセス、迷惑行為その他の不正利用を防止するため</li>
+              <li>本サービスに関する重要なお知らせを行うため</li>
+              <li>法令または行政機関からの要請に対応するため</li>
+              <li>上記の利用目的に付随する業務を行うため</li>
+            </ol>
+
+            <p>
+              利用目的を変更する場合は、変更前の目的と合理的な関連性を有する範囲で行い、
+              変更後の利用目的を本サイト上で公表します。
+            </p>
+          </section>
+
+          <section id="cookies" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">04</span>
+            <h2>Cookieおよびローカルストレージ</h2>
+
+            <p>
+              本サイトでは、サイトの表示や利用者の設定を維持するため、Cookieまたは
+              ブラウザのローカルストレージを使用する場合があります。
+            </p>
+
+            <p>
+              現在、本サイトではテーマ表示設定（ダークモードまたはライトモード）を
+              保存するため、ブラウザのローカルストレージを使用しています。
+              この設定情報のみから、当スタジオが利用者個人を特定することはありません。
+            </p>
+
+            <p>
+              利用者はブラウザの設定により、Cookieの無効化、保存済みCookieおよび
+              ローカルストレージの削除を行うことができます。ただし、無効化または
+              削除により、本サイトの一部機能や設定保存が正常に動作しない場合があります。
+            </p>
+
+            <p class="legal-note">
+              アクセス解析サービス、広告配信サービスその他の第三者サービスを
+              将来導入する場合は、その内容および情報の取り扱いについて本ポリシーに追記します。
+            </p>
+          </section>
+
+          <section id="third-party" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">05</span>
+            <h2>個人データの第三者提供</h2>
+
+            <p>
+              当スタジオは、次の場合を除き、あらかじめ本人の同意を得ることなく、
+              個人データを第三者へ提供しません。
+            </p>
+
+            <ul>
+              <li>法令に基づく場合</li>
+              <li>人の生命、身体または財産の保護に必要で、本人の同意を得ることが困難な場合</li>
+              <li>
+                公衆衛生の向上または児童の健全な育成の推進に特に必要で、
+                本人の同意を得ることが困難な場合
+              </li>
+              <li>
+                国、地方公共団体またはその委託を受けた者が法令上の事務を遂行するために
+                協力する必要があり、本人の同意を得ることで当該事務の遂行に
+                支障を及ぼすおそれがある場合
+              </li>
+              <li>その他、個人情報保護法その他の法令で認められる場合</li>
+            </ul>
+          </section>
+
+          <section id="outsourcing" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">06</span>
+            <h2>個人情報の取り扱いの委託</h2>
+
+            <p>
+              当スタジオは、利用目的の達成に必要な範囲で、サーバー管理、
+              メール配信、データ保管、採用管理その他の業務を外部事業者へ
+              委託する場合があります。
+            </p>
+
+            <p>
+              この場合、委託先を適切に選定し、必要に応じて秘密保持および
+              個人情報の取り扱いに関する契約を締結するとともに、
+              委託先に対して必要かつ適切な監督を行います。
+            </p>
+          </section>
+
+          <section id="security" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">07</span>
+            <h2>安全管理措置</h2>
+
+            <p>
+              当スタジオは、取り扱う個人データの漏えい、滅失、毀損、不正アクセス
+              その他の事故を防止するため、必要かつ適切な安全管理措置を講じます。
+            </p>
+
+            <ul>
+              <li>個人情報を取り扱う担当者および範囲の限定</li>
+              <li>アカウント、パスワードおよびアクセス権限の適切な管理</li>
+              <li>通信の暗号化その他の技術的な保護措置</li>
+              <li>端末、記録媒体および書類の適切な管理</li>
+              <li>不正アクセスおよびマルウェアへの対策</li>
+              <li>委託先の選定および取り扱い状況の確認</li>
+              <li>漏えいなどが発生した場合の連絡および対応体制の整備</li>
+            </ul>
+          </section>
+
+          <section id="retention" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">08</span>
+            <h2>情報の保存期間</h2>
+
+            <p>
+              当スタジオは、取得した情報を利用目的の達成に必要な期間に限って保存します。
+              利用する必要がなくなった情報については、法令上保存が必要な場合を除き、
+              合理的な期間内に削除または匿名化します。
+            </p>
+
+            <p>
+              お問い合わせや取引に関する情報については、対応履歴の確認、
+              紛争の防止、法令上の義務への対応などに必要な期間保存する場合があります。
+            </p>
+          </section>
+
+          <section id="requests" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">09</span>
+            <h2>開示、訂正および利用停止等の請求</h2>
+
+            <p>
+              本人またはその正当な代理人は、当スタジオが保有する本人の個人データについて、
+              利用目的の通知、開示、訂正、追加、削除、利用停止、消去または
+              第三者提供の停止を請求できる場合があります。
+            </p>
+
+            <p>
+              請求を希望する場合は、本ポリシー末尾のお問い合わせ窓口までご連絡ください。
+              当スタジオは、本人確認に必要な情報または書類の提出をお願いしたうえで、
+              法令に従って合理的な期間内に対応します。
+            </p>
+
+            <p>
+              法令により請求に応じる義務がない場合、本人または第三者の権利利益を
+              害するおそれがある場合、当スタジオの業務に著しい支障を及ぼす場合などは、
+              請求の全部または一部に応じられないことがあります。
+              その場合は、可能な範囲で理由を説明します。
+            </p>
+          </section>
+
+          <section id="external" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">10</span>
+            <h2>外部サイトおよび外部サービス</h2>
+
+            <p>
+              本サイトには、当スタジオ以外の事業者が運営するウェブサイト、
+              SNS、ゲーム配信プラットフォームその他の外部サービスへのリンクが
+              含まれる場合があります。
+            </p>
+
+            <p>
+              外部サービスにおける情報の取り扱いについては、
+              各サービスのプライバシーポリシーをご確認ください。
+              当スタジオは、外部サービスにおける情報の取り扱いについて、
+              当スタジオが法令上責任を負う場合を除き、責任を負いません。
+            </p>
+          </section>
+
+          <section id="children" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">11</span>
+            <h2>未成年者の個人情報</h2>
+
+            <p>
+              未成年者が本サービスを通じて個人情報を提供する場合は、
+              必要に応じて保護者などの法定代理人の同意を得たうえで提供してください。
+            </p>
+
+            <p>
+              当スタジオが、法定代理人の同意を必要とする未成年者の個人情報を
+              同意なく取得したことを確認した場合は、法令および取得状況に応じて
+              適切に対応します。
+            </p>
+          </section>
+
+          <section id="changes" class="panel legal-section" data-reveal>
+            <span class="legal-section-number" aria-hidden="true">12</span>
+            <h2>本ポリシーの変更</h2>
+
+            <p>
+              当スタジオは、法令の改正、本サービスの内容変更その他必要に応じて、
+              本ポリシーを変更することがあります。
+            </p>
+
+            <p>
+              重要な変更を行う場合は、本サイト上での掲載その他の適切な方法により
+              利用者へお知らせします。変更後の本ポリシーは、本ページに掲載した時点
+              または別途定めた効力発生日から適用されます。
+            </p>
+          </section>
+
+          <section id="contact-privacy" class="contact-panel legal-contact" data-reveal>
+            <p class="eyebrow">PRIVACY CONTACT</p>
+            <h2>お問い合わせ</h2>
+
+            <p>
+              本ポリシー、個人情報の取り扱い、開示等の請求または苦情に関する
+              お問い合わせは、以下の窓口までご連絡ください。
+            </p>
+
+            <dl class="legal-contact-details">
+              <div>
+                <dt>窓口</dt>
+                <dd>BANANA CREATE 個人情報お問い合わせ窓口</dd>
+              </div>
+              <div>
+                <dt>運営者</dt>
+                <dd>【公開前に法人名または個人事業主名を入力】</dd>
+              </div>
+              <div>
+                <dt>メール</dt>
+                <dd>
+                  <a href="mailto:privacy@example.com">
+                    privacy@example.com
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt>受付時間</dt>
+                <dd>平日 10:00〜17:00（土日祝日を除く）</dd>
+              </div>
+            </dl>
+
+            <p class="legal-contact-note">
+              ※メールアドレス、受付時間は公開前に実際の運用内容へ変更してください。
+            </p>
+
+            <span class="contact-decoration" aria-hidden="true">✳</span>
+          </section>
+
+          <footer class="legal-document-footer" data-reveal>
+            <p>BANANA CREATE</p>
+            <p>
+              制定：<time datetime="2026-09-26">2026年9月26日</time>
+            </p>
+          </footer>
+        </article>
       </div>
-      <section class="panel">
-        <p>
-          BANANA CREATE（以下「当スタジオ」）は、当サイトにおける利用者情報の取り扱いについて、
-          以下のとおり定めます。
-        </p>
-        <h2>1. 取得する情報</h2>
-        <p>
-          お問い合わせ時に提供される氏名、メールアドレスなど、連絡に必要な情報を取得する場合があります。
-        </p>
-        <h2>2. 利用目的</h2>
-        <p>取得した情報は、お問い合わせへの返信、連絡、サービス改善のために利用します。</p>
-        <h2>3. 第三者提供</h2>
-        <p>法令に基づく場合を除き、本人の同意なく第三者へ提供しません。</p>
-        <h2>4. 改定</h2>
-        <p>本ポリシーは必要に応じて改定されます。改定後は本ページにて公表します。</p>
-        <h2>5. お問い合わせ</h2>
-        <p>お問い合わせ窓口は現在準備中です。公開時に当サイト内で連絡先を案内します。</p>
-      </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-wrap">
         <small>© BANANA CREATE</small>
         <ul class="footer-links">
-          <li><a href="./privacy.html">Privacy Policy</a></li>
+          <li>
+            <a href="./privacy.html" aria-current="page">Privacy Policy</a>
+          </li>
           <li><a href="./games/index.html">Games</a></li>
-          <li><a href="./index.html#contact">Contact</a></li>
+          <li><a href="./contact/index.html#contact">Contact</a></li>
         </ul>
       </div>
     </footer>
-    <script src="./script.js"></script>
+
+    <button
+      class="back-to-top"
+      type="button"
+      data-back-to-top
+      aria-label="ページ上部へ戻る"
+    >
+      ↑
+    </button>
   </body>
-  </html>
+</html>
