@@ -20,6 +20,10 @@ if ('IntersectionObserver' in window) {
 
 if (window.matchMedia('(pointer: fine)').matches) {
   document.querySelectorAll('.tilt').forEach((card) => {
+    const applyTilt = (rotateX, rotateY) => {
+      card.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
+    };
+
     card.addEventListener('mousemove', (event) => {
       const rect = card.getBoundingClientRect();
       const relativeX = (event.clientX - rect.left) / rect.width;
@@ -27,10 +31,18 @@ if (window.matchMedia('(pointer: fine)').matches) {
       const rotateY = (relativeX - 0.5) * 10;
       const rotateX = (0.5 - relativeY) * 8;
 
-      card.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
+      applyTilt(rotateX, rotateY);
     });
 
     card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+
+    card.addEventListener('focus', () => {
+      applyTilt(2, -2);
+    });
+
+    card.addEventListener('blur', () => {
       card.style.transform = '';
     });
   });
