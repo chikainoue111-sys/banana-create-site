@@ -31,17 +31,22 @@
   }
 
   var frames = document.querySelectorAll(".media-frame");
-  frames.forEach(function (frame) {
+  for (var i = 0; i < frames.length; i += 1) {
+    var frame = frames[i];
     var img = frame.querySelector("img");
-    if (!img) return;
+    var fallback = frame.querySelector(".media-fallback");
+    if (!img) continue;
 
     function markMissing() {
       frame.classList.add("is-missing");
+      if (fallback) {
+        fallback.hidden = false;
+      }
     }
 
     img.addEventListener("error", markMissing);
     if (img.complete && img.naturalWidth === 0) {
       markMissing();
     }
-  });
+  }
 })();
