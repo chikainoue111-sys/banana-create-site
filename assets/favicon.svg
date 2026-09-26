@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">BANANA CREATE favicon</title>
+  <desc id="desc">A cute banana icon on a soft yellow rounded square background.</desc>
+  <rect width="64" height="64" rx="16" fill="#FFF7D9" />
+  <path d="M18 43c9-2 17-8 22-18 2-4 7-3 7 1-1 12-8 21-21 24-5 1-10-5-8-7Z" fill="#FFC93D" stroke="#6B5415" stroke-width="2.3" stroke-linejoin="round" />
+  <circle cx="43.5" cy="19.5" r="2.3" fill="#6B5415" />
+  <path d="M20 44c4 3 9 4 14 4" fill="none" stroke="#6B5415" stroke-width="2" stroke-linecap="round" />
+</svg>
