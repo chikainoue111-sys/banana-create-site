@@ -86,7 +86,6 @@ a { color: inherit; }
 .site-nav a:hover,
 .site-nav a:focus-visible {
   background: #ede4c7;
-  outline: none;
 }
 
 .hero {
@@ -140,7 +139,6 @@ h2 {
 .btn.primary:hover,
 .btn.primary:focus-visible {
   background: #d0b14f;
-  outline: none;
 }
 
 .btn.ghost {
@@ -151,7 +149,6 @@ h2 {
 .btn.ghost:hover,
 .btn.ghost:focus-visible {
   background: #efe7cc;
-  outline: none;
 }
 
 .media-frame {
