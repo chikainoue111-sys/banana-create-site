@@ -30,12 +30,10 @@
     });
   }
 
-  var frames = document.querySelectorAll(".media-frame");
-  for (var i = 0; i < frames.length; i += 1) {
-    var frame = frames[i];
+  function setupFrame(frame) {
     var img = frame.querySelector("img");
     var fallback = frame.querySelector(".media-fallback");
-    if (!img) continue;
+    if (!img) return;
 
     function markMissing() {
       frame.classList.add("is-missing");
@@ -48,5 +46,10 @@
     if (img.complete && img.naturalWidth === 0) {
       markMissing();
     }
+  }
+
+  var frames = document.querySelectorAll(".media-frame");
+  for (var i = 0; i < frames.length; i += 1) {
+    setupFrame(frames[i]);
   }
 })();
