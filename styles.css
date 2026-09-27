@@ -1939,3 +1939,8 @@ section[id] { scroll-margin-top: 110px; }
     grid-template-columns: 1fr;
   }
 }
+
+.decorative-symbol {
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-variant-emoji: text;
+}
