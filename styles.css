@@ -1946,11 +1946,20 @@ section[id] { scroll-margin-top: 110px; }
 }
 
 .panel-symbol,
-.contact-decoration {
+.contact-decoration,
+.ticker-track span {
+  font-family: "Apple Symbols", "Segoe UI Symbol", "Arial Unicode MS", "Noto Sans Symbols 2", sans-serif;
   font-variant-emoji: text;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-feature-settings: "liga" 0, "calt" 0;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  line-height: 1;
 }
 
-.ticker-track span {
-  font-variant-emoji: text;
+@supports (-webkit-touch-callout: none) {
+  .panel-symbol,
+  .contact-decoration,
+  .ticker-track span {
+    font-family: "Apple Symbols", "Segoe UI Symbol", sans-serif;
+  }
 }
