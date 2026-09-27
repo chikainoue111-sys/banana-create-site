@@ -1944,3 +1944,13 @@ section[id] { scroll-margin-top: 110px; }
   font-family: Arial, "Helvetica Neue", sans-serif;
   font-variant-emoji: text;
 }
+
+.panel-symbol,
+.contact-decoration {
+  font-variant-emoji: text;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.ticker-track span {
+  font-variant-emoji: text;
+}
