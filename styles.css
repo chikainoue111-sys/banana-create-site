@@ -1948,7 +1948,7 @@ section[id] { scroll-margin-top: 110px; }
 .panel-symbol,
 .contact-decoration,
 .ticker-track span {
-  font-family: "Apple Symbols", "Segoe UI Symbol", "Arial Unicode MS", "Noto Sans Symbols 2", sans-serif;
+  font-family: "Noto Sans Symbols 2", "Segoe UI Symbol", "Apple Symbols", "Arial Unicode MS", sans-serif;
   font-variant-emoji: text;
   font-feature-settings: "liga" 0, "calt" 0;
   -webkit-font-smoothing: antialiased;
@@ -1960,14 +1960,6 @@ section[id] { scroll-margin-top: 110px; }
   .panel-symbol,
   .contact-decoration,
   .ticker-track span {
-    font-family: "Apple Symbols", "Segoe UI Symbol", sans-serif;
-  }
-}
-
-@supports (-webkit-touch-callout: none) {
-  .panel-symbol,
-  .contact-decoration,
-  .ticker-track span {
-    font-family: "Apple Symbols", "Segoe UI Symbol", sans-serif;
+    font-family: "Noto Sans Symbols 2", "Segoe UI Symbol", "Apple Symbols", sans-serif;
   }
 }
