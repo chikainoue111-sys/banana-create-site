@@ -1958,3 +1958,17 @@ section[id] { scroll-margin-top: 110px; }
   margin: 0 0.5em;
   vertical-align: 0;
 }
+
+/* 見出し内の装飾マーク */
+.eyebrow-mark {
+  width: 0.8em;
+  height: 0.8em;
+  margin-inline: 0.45em;
+  vertical-align: -0.05em;
+  stroke-width: 3;
+  flex: 0 0 auto;
+}
+
+.eyebrow {
+  align-items: center;
+}

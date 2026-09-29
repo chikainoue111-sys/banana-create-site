@@ -13,7 +13,20 @@
     <script src="../script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">本文へスキップ</a>
+  <!-- 装飾マーク（SVG）。文字ではないので絵文字化しない -->
+  <svg
+    width="0"
+    height="0"
+    style="position: absolute"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <symbol id="icon-spark" viewBox="0 0 24 24">
+      <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1" />
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">本文へスキップ</a>
     <div class="scroll-progress" aria-hidden="true"></div>
 
     <header class="site-header">
@@ -48,7 +61,18 @@
 
     <main id="main" class="main-wrap">
       <section class="content-section contact-hero" aria-labelledby="contact-title">
-        <p class="eyebrow">CONTACT ✳ BANANA CREATE</p>
+        <p class="eyebrow">
+  CONTACT
+  <svg
+    class="icon-spark eyebrow-mark"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <use href="#icon-spark"></use>
+  </svg>
+  BANANA CREATE
+</p>
         <h1 id="contact-title">Let's Talk<br /><em>About Ideas.</em></h1>
         <p class="contact-hero-lead">
           制作協業、取材、採用に関するご相談を受け付けています。  

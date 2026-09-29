@@ -14,6 +14,12 @@
   </head>
 
   <body>
+    <!-- 装飾マーク（SVG）。文字ではないので絵文字化しない -->
+<svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+  <symbol id="icon-spark" viewBox="0 0 24 24">
+    <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1" />
+  </symbol>
+</svg>
     <a class="skip-link" href="#main">本文へスキップ</a>
     <div class="scroll-progress" aria-hidden="true"></div>
 
@@ -68,7 +74,13 @@
 
     <main id="main" class="main-wrap">
       <section class="content-section news-hero" aria-labelledby="news-page-title">
-        <p class="eyebrow">LATEST UPDATES ✳ BANANA CREATE</p>
+        <p class="eyebrow">
+  LATEST UPDATES
+  <svg class="icon-spark eyebrow-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <use href="#icon-spark"></use>
+  </svg>
+  BANANA CREATE
+</p>
         <h1 id="news-page-title">Latest <em>News.</em></h1>
         <p class="news-hero-lead">
           制作中のゲーム、スタジオの動き、サイトに関するお知らせを掲載しています。
@@ -91,7 +103,11 @@
             </p>
           </div>
 
-          <span class="featured-news-symbol" aria-hidden="true">✳</span>
+          <span class="featured-news-symbol" aria-hidden="true">
+  <svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <use href="#icon-spark"></use>
+  </svg>
+</span>
         </article>
 
         <div class="news-list-wrap">
@@ -140,7 +156,11 @@
 
           <article class="news-item panel news-placeholder" data-reveal>
             <div class="news-item-date">
-              <span class="placeholder-mark" aria-hidden="true">✳</span>
+              <span class="placeholder-mark" aria-hidden="true">
+  <svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <use href="#icon-spark"></use>
+  </svg>
+</span>
             </div>
 
             <div class="news-item-content">
@@ -175,7 +195,11 @@
           </a>
         </div>
 
-        <span class="news-bottom-decoration" aria-hidden="true">✳</span>
+       <span class="news-bottom-decoration" aria-hidden="true">
+  <svg class="icon-spark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <use href="#icon-spark"></use>
+  </svg>
+</span>
       </section>
     </main>
 
