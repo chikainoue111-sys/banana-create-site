@@ -1940,26 +1940,21 @@ section[id] { scroll-margin-top: 110px; }
   }
 }
 
-.decorative-symbol {
-  font-family: Arial, "Helvetica Neue", sans-serif;
-  font-variant-emoji: text;
-}
-
-.panel-symbol,
-.contact-decoration,
-.ticker-track span {
-  font-family: "Apple Symbols", "Segoe UI Symbol", "Noto Sans Symbols 2", "Arial Unicode MS", sans-serif;
-  font-variant-emoji: text;
-  font-feature-settings: "liga" 0, "calt" 0;
-  -webkit-font-smoothing: antialiased;
+/* 装飾マーク（SVG） */
+.icon-spark {
   display: inline-block;
-  line-height: 1;
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  vertical-align: -0.1em;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .panel-symbol,
-  .contact-decoration,
-  .ticker-track span {
-    font-family: "Apple Symbols", "Segoe UI Symbol", sans-serif;
-  }
+.ticker-mark {
+  width: 0.7em;
+  height: 0.7em;
+  margin: 0 0.5em;
+  vertical-align: 0;
 }
